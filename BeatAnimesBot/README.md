@@ -1,6 +1,6 @@
 <p align="center"><a href="https://t.me/BeatAnime"><img src="./assets/thumb.jpg"></a></p> 
 
-<h1 align="center"><b>AutoAnimeBot</b></h1>
+<h1 align="center"><b>BeatAnimeBot</b></h1>
 <h2 align="center"><b>Automates The Process Of Managing Your Anime Channels</b></h4>
 
 
@@ -34,7 +34,7 @@
 
 - Bot make sures that it has uploaded episode in all four qualities ( 360p, 480p, 720p, 1080p ), if available !!
 
-- If [this](https://t.me/Anime_Dex/610) episode link message exceeds the tg limit of 4096 characters,  a new message will be created replying to info message of anime and new episode links will be added there
+- If [this]() episode link message exceeds the tg limit of 4096 characters,  a new message will be created replying to info message of anime and new episode links will be added there
 
 - You can click the hashtag below each file on uploads channel to get all files of that anime
 </details>
@@ -107,4 +107,5 @@
 ### ⛑ Important
 
 ### ❗️ You are free to use and make your own clone, but you cant sell this repo to others
+
 
