@@ -32,4 +32,5 @@ for k, v in {
     "https://t.me/Beat_Animes_Discussion": COMMENTS_GROUP_LINK,
 }.items():
     if not v:
-        raise Exception(f"{k} not found .env file, please add it to use AutoAnimeBot")
+        raise Exception(f"{k} not found .env file, please add it to use BeatAnimeBot")
+
