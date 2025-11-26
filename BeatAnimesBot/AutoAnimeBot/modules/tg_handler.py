@@ -1,14 +1,14 @@
 import asyncio
-from AutoAnimeBot.core.log import LOGGER
+from BeatAnimeBot.core.log import LOGGER
 from pyrogram.types import (
     Message,
     InlineKeyboardMarkup,
     InlineKeyboardButton,
     CallbackQuery,
 )
-from AutoAnimeBot.modules.uploader import upload_video
+from BeatAnimeBot.modules.uploader import upload_video
 import os
-from AutoAnimeBot.modules.db import (
+from BeatAnimeBot.modules.db import (
     add_to_failed,
     del_anime,
     get_channel,
@@ -20,8 +20,8 @@ from AutoAnimeBot.modules.db import (
     save_vote,
     is_uploaded,
 )
-from AutoAnimeBot.modules.downloader import downloader
-from AutoAnimeBot.modules.anilist import get_anilist_data, get_anime_img, get_anime_name
+from BeatAnimeBot.modules.downloader import downloader
+from BeatAnimeBot.modules.anilist import get_anilist_data, get_anime_img, get_anime_name
 from config import (
     INDEX_CHANNEL_USERNAME,
     UPLOADS_CHANNEL_USERNAME,
@@ -29,7 +29,7 @@ from config import (
 )
 from pyrogram.errors import FloodWait
 from pyrogram import filters
-from AutoAnimeBot.inline import button1
+from BeatAnimeBot.inline import button1
 from techzapi.api import TechZApi
 from pyrogram.client import Client
 
@@ -220,3 +220,4 @@ async def channel_handler(video_id, anime_id, name, ep_num, quality):
         )
     except Exception as e:
         logger.warning(str(e))
+
