@@ -1,17 +1,17 @@
-from AutoAnimeBot.modules.utils import (
+from BeatAnimeBot.modules.utils import (
     format_time,
     get_duration,
     get_filesize,
     tags_generator,
 )
-from AutoAnimeBot.modules.thumbnail import generate_thumbnail
+from BeatAnimeBot.modules.thumbnail import generate_thumbnail
 from config import COMMENTS_GROUP_LINK, INDEX_CHANNEL_USERNAME
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from AutoAnimeBot.modules.progress import upload_progress
+from BeatAnimeBot.modules.progress import upload_progress
 import os
 import time
-from AutoAnimeBot.core.log import LOGGER
-from AutoAnimeBot.modules.progress import t1, dcount
+from BeatAnimeBot.core.log import LOGGER
+from BeatAnimeBot.modules.progress import t1, dcount
 
 logger = LOGGER("Uploader")
 
@@ -72,3 +72,4 @@ async def upload_video(app, msg, file, id, tit, title, eid):
         logger.warning(str(e))
 
     return video.id
+
