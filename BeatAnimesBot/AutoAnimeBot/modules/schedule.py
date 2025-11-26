@@ -1,7 +1,7 @@
 import requests
 import math
-from AutoAnimeBot.core.log import LOGGER
-from AutoAnimeBot.inline import button2
+from BeatAnimeBot.core.log import LOGGER
+from BeatAnimeBot.inline import button2
 from pyrogram.types import Message
 from pyrogram.enums import ParseMode
 from pyrogram.errors import MessageNotModified
@@ -68,3 +68,4 @@ async def update_schedule(app):
         pass
     except Exception as e:
         logger.warning(str(e))
+
