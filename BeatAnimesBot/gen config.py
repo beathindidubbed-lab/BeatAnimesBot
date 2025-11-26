@@ -11,7 +11,6 @@ for i in [
     "SCHEDULE_MSG_ID",
     "INDEX_CHANNEL_USERNAME",
     "UPLOADS_CHANNEL_USERNAME",
-    "TECHZ_API_KEY",
     "COMMENTS_GROUP_LINK",
     "CHANNEL_TITLE"
 ]:
@@ -20,4 +19,5 @@ for i in [
 
 with open("config.env", "w") as f:
     f.write(config)
+
 
