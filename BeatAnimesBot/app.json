@@ -18,10 +18,10 @@
         "automation"
     ],
     "env": {
-        "TECHZ_API_KEY": {
-            "description": "Your TechZApi Key, Get from https://telegram.me/TechZApiBot",
-            "value": "",
-            "required": true
+        "ANIME_API_URL": { // ⬅️ ADD THIS NEW ENTRY
+            "description": "The URL of your self-hosted anime API. Default is https://beatanimesapi.onrender.com",
+            "value": "https://beatanimesapi.onrender.com",
+            "required": false
         },
         "API_ID": {
             "description": "Your Telegram API ID, Get from https://my.telegram.org",
@@ -76,3 +76,4 @@
     }
 
 }
+
