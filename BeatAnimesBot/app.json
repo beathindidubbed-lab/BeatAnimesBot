@@ -18,7 +18,7 @@
         "automation"
     ],
     "env": {
-        "ANIME_API_URL": { # // ⬅️ ADD THIS NEW ENTRY
+        "ANIME_API_URL": { 
             "description": "The URL of your self-hosted anime API. Default is https://beatanimesapi.onrender.com",
             "value": "https://beatanimesapi.onrender.com",
             "required": false
@@ -76,5 +76,6 @@
     }
 
 }
+
 
 
