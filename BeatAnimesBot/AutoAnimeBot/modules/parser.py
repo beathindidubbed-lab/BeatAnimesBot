@@ -8,9 +8,9 @@ from BeatAnimeBot.modules.db import get_animesdb, get_uploads, is_failed, save_a
 logger = LOGGER("Parser")
 
 
-async def auto_parser(TECHZ_API_KEY, app):
-    Gogo = TechZApi.Gogo(TECHZ_API_KEY)
-    Gogo.base = "https://api.techzbots.live"
+async def auto_parser(app):
+   # Gogo = TechZApi.Gogo(TECHZ_API_KEY)
+   # Gogo.base = "https://api.techzbots.live"
 
     while True:
         await app.update_status("Scrapping Animes...")
@@ -52,4 +52,5 @@ async def auto_parser(TECHZ_API_KEY, app):
         await app.update_status("Idle...")
 
         await asyncio.sleep(600)
+
 
