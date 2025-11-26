@@ -1,20 +1,20 @@
 from pyrogram import Client
 from config import *
 import asyncio
-from AutoAnimeBot.modules.parser import auto_parser
+from BeatAnimeBot.modules.parser import auto_parser
 from pyrogram.errors import MessageNotModified
-from AutoAnimeBot.modules.tg_handler import tg_handler
-from AutoAnimeBot.inline import button1
+from BeatAnimeBot.modules.tg_handler import tg_handler
+from BeatAnimeBot.inline import button1
 from pyrogram.types import Message
-from AutoAnimeBot.core.log import LOGGER
+from BeatAnimeBot.core.log import LOGGER
 
 
-class AutoAnimeBot(Client):
+class BeatAnimeBot(Client):
     def __init__(self):
-        self.logger = LOGGER("AutoAnimeBot")
-        self.logger.info("Starting AutoAnimeBot")
+        self.logger = LOGGER("BeatAnimeBot")
+        self.logger.info("Starting BeatAnimeBot")
         super().__init__(
-            "AutoAnimeBot", api_id=int(API_ID), api_hash=API_HASH, bot_token=BOT_TOKEN
+            "BeatAnimeBot", api_id=int(API_ID), api_hash=API_HASH, bot_token=BOT_TOKEN
         )
 
     async def start(self):
@@ -34,8 +34,8 @@ class AutoAnimeBot(Client):
         )
 
         self.logger.info("==================================")
-        self.logger.info("AutoAnimeBot Started Bot Successfully")
-        self.logger.info("==========JOIN @TECHZBOTS=========")
+        self.logger.info("BeatAnimeBot Started Bot Successfully")
+        self.logger.info("==========JOIN @BeatAnime=========")
 
         self.logger.info("Adding Parsing Task")
         asyncio.create_task(auto_parser(TECHZ_API_KEY, self))
@@ -69,3 +69,4 @@ class AutoAnimeBot(Client):
             queue_text = "❌ Empty"
 
         return stat.format(text, queue_text)
+
