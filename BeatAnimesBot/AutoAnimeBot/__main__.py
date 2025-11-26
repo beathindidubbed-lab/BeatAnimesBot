@@ -17,7 +17,7 @@ import time
 def keep_alive():
     while True:
         try:
-            requests.get('https://beatanimes-api.onrender.com/ping')
+            requests.get('https://beatanimesapi.onrender.com.com/ping')
         except:
             pass
         time.sleep(840)  # 14 minutes
@@ -29,7 +29,7 @@ Thread(target=keep_alive, daemon=True).start()
 async def start(bot, message: Message):
     await message.reply_photo(
         "assets/thumb.jpg",
-        caption="⭐️ **Bot Is Online...**\n\n**Updates :** @TechZBots **| Support :** @TechZBots_Support",
+        caption="⭐️ **Bot Is Online...**\n\n**Updates :** @BeatAnime **| Support :** @Beat_Anime_Discussion",
     )
 
 
@@ -37,7 +37,7 @@ async def start(bot, message: Message):
 async def logs(bot, message: Message):
     await message.reply_document(
         "logs.txt",
-        caption="AutoAnimeBot Logs, Send this to @TechZBots_Support if you need help",
+        caption="BeatAnimeBot Logs, Send this to @Beat_Anime_Discussion if you need help",
     )
 
 
@@ -57,4 +57,5 @@ if __name__ == "__main__":
         with suppress(asyncio.exceptions.CancelledError):
             loop.run_until_complete(main())
             loop.run_until_complete(asyncio.sleep(3.0))
+
 
