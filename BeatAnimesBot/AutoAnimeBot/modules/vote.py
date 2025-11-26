@@ -1,8 +1,8 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from AutoAnimeBot import app
+from BeatAnimeBot import app
 from pyrogram import filters
-from AutoAnimeBot.modules.db import is_voted, save_vote
-from AutoAnimeBot.core.log import LOGGER
+from BeatAnimeBot.modules.db import is_voted, save_vote
+from BeatAnimeBot.core.log import LOGGER
 
 logger = LOGGER("Vote")
 
@@ -83,3 +83,4 @@ async def votes_(_, query: CallbackQuery):
         await save_vote(id, user)
     except Exception as e:
         logger.warning(str(e))
+
