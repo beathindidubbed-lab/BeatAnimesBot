@@ -38,8 +38,8 @@ class BeatAnimeBot(Client):
         self.logger.info("==========JOIN @BeatAnime=========")
 
         self.logger.info("Adding Parsing Task")
-        asyncio.create_task(auto_parser(TECHZ_API_KEY, self))
-        asyncio.create_task(tg_handler(self, TECHZ_API_KEY))
+        asyncio.create_task(auto_parser(self))
+        asyncio.create_task(tg_handler(self))
 
     async def update_status(self, text):
         try:
@@ -69,4 +69,5 @@ class BeatAnimeBot(Client):
             queue_text = "❌ Empty"
 
         return stat.format(text, queue_text)
+
 
