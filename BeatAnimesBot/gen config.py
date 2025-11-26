@@ -1,4 +1,4 @@
-print("AutoAnimeBot Config Generator\n")
+print("BeatAnimeBot Config Generator\n")
 
 config = ""
 
@@ -20,3 +20,4 @@ for i in [
 
 with open("config.env", "w") as f:
     f.write(config)
+
