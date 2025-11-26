@@ -1,6 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from config import MONGO_DB_URI
-from AutoAnimeBot.core.log import LOGGER
+from BeatAnimeBot.core.log import LOGGER
 
 logger = LOGGER("Database")
 logger.info("Starting Mongo DB Client")
@@ -129,3 +129,4 @@ async def is_failed(name):
         if data["count"] > 3:
             return True
     return False
+
