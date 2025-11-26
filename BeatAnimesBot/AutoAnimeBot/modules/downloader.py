@@ -1,8 +1,8 @@
 import os
 import shutil
 from pyrogram.types import Message
-from AutoAnimeBot.core.log import LOGGER
-from AutoAnimeBot.modules.progress import progress_text
+from BeatAnimeBot.core.log import LOGGER
+from BeatAnimeBot.modules.progress import progress_text
 import time
 import aiohttp
 import aiofiles
@@ -57,3 +57,4 @@ async def downloader(message: Message, l, title, file_name):
         logger.warning(str(e))
     logger.info(f"Downloaded {title}")
     return file_name
+
