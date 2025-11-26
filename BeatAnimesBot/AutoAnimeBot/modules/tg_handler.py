@@ -37,12 +37,12 @@ logger = LOGGER("TgHandler")
 app = Client
 
 
-async def tg_handler(appp, TECHZ_API_KEY):
+async def tg_handler(appp):
     global app
     app = appp
     queue = app.queue
-    Gogo = TechZApi.Gogo(TECHZ_API_KEY)
-    Gogo.base = "https://api.techzbots.live"
+   # Gogo = TechZApi.Gogo(TECHZ_API_KEY)
+    #Gogo.base = "https://api.techzbots.live"
 
     while True:
         if len(queue) != 0:
@@ -220,4 +220,5 @@ async def channel_handler(video_id, anime_id, name, ep_num, quality):
         )
     except Exception as e:
         logger.warning(str(e))
+
 
