@@ -1,7 +1,7 @@
 {
-    "name": "AutoAnimeBot",
+    "name": "BeatAnimeBot",
     "description": "Telegram Bot To Automate Your Anime Channels",
-    "repository": "https://github.com/TechShreyash/AutoAnimeBot",
+    "repository": "https://github.com/beathindidubbed-lab/BeatAnimesBot",
     "keywords": [
         "python",
         "flask website",
@@ -74,4 +74,5 @@
             "required": true
         }
     }
+
 }
