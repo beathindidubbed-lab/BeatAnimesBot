@@ -28,9 +28,9 @@ for k, v in {
     "3": SCHEDULE_MSG_ID,
     "@BeatAnimes": INDEX_CHANNEL_USERNAME,
     "https://t.me/+raD-tyY7z6RhOWNl": UPLOADS_CHANNEL_USERNAME,
-    "TECHZ_API_KEY": TECHZ_API_KEY,
     "https://t.me/Beat_Animes_Discussion": COMMENTS_GROUP_LINK,
 }.items():
     if not v:
         raise Exception(f"{k} not found .env file, please add it to use BeatAnimeBot")
+
 
