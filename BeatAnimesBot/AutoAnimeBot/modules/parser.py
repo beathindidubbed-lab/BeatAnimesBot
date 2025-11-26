@@ -1,8 +1,8 @@
 import asyncio
 from techzapi.api import TechZApi
-from AutoAnimeBot.core.log import LOGGER
-from AutoAnimeBot.modules.schedule import update_schedule
-from AutoAnimeBot.modules.db import get_animesdb, get_uploads, is_failed, save_animedb
+from BeatAnimeBot.core.log import LOGGER
+from BeatAnimeBot.modules.schedule import update_schedule
+from BeatAnimeBot.modules.db import get_animesdb, get_uploads, is_failed, save_animedb
 
 
 logger = LOGGER("Parser")
@@ -52,3 +52,4 @@ async def auto_parser(TECHZ_API_KEY, app):
         await app.update_status("Idle...")
 
         await asyncio.sleep(600)
+
