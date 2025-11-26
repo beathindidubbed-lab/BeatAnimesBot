@@ -10,6 +10,20 @@ from AutoAnimeBot import app
 
 loop = asyncio.get_event_loop()
 
+import requests
+from threading import Thread
+import time
+
+def keep_alive():
+    while True:
+        try:
+            requests.get('https://beatanimes-api.onrender.com/ping')
+        except:
+            pass
+        time.sleep(840)  # 14 minutes
+
+# Start in background
+Thread(target=keep_alive, daemon=True).start()
 
 @app.on_message(filters.command(["start", "help", "ping"]))
 async def start(bot, message: Message):
@@ -43,3 +57,4 @@ if __name__ == "__main__":
         with suppress(asyncio.exceptions.CancelledError):
             loop.run_until_complete(main())
             loop.run_until_complete(asyncio.sleep(3.0))
+
