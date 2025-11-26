@@ -1,3 +1,4 @@
-from AutoAnimeBot.core.bot import AutoAnimeBot
+from   BeatAnimeBot.core.bot import BeatAnimeBot
 
-app = AutoAnimeBot()
+app = BeatAnimeBot()
+
