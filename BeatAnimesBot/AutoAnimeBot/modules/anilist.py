@@ -1,4 +1,4 @@
-from AutoAnimeBot.modules.utils import format_text
+from BeatAnimeBot.modules.utils import format_text
 import requests
 
 ANIME_QUERY = """
@@ -182,3 +182,4 @@ async def get_anilist_data(name):
         caption += f"\n[More Info](https://anilist.co/anime/{id_})"
 
     return img, caption
+
