@@ -3,7 +3,7 @@
 <h1 align="center"><b>AutoAnimeBot</b></h1>
 <h2 align="center"><b>Automates The Process Of Managing Your Anime Channels</b></h4>
 
-<p align="center" > <img alt="GitHub Forks" src=""> <img alt="GitHub Repo Stars" src=""></p>
+
 
 <hr>
 
@@ -107,3 +107,4 @@
 ### ⛑ Important
 
 ### ❗️ You are free to use and make your own clone, but you cant sell this repo to others
+
